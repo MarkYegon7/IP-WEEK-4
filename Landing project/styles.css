@@ -1,0 +1,119 @@
+/* CSS Document*/
+
+body{
+    background-color: antiquewhite;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-image:url("splash.jpg");
+    background-size: cover;
+}
+.home{
+    display: flex;
+    float:right;
+    
+}
+ul{
+    list-style: none;
+    display: flex;
+}
+a{
+    text-decoration: none;
+    margin-left: 3px;
+    margin-right: 3px;
+
+}
+section{
+    width:100%;
+    height: 95vh;
+    background-image:url("file:///home/mark/Documents/images/adi-goldstein-mDinBvq1Sfg-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    position:relative;
+}
+nav{
+    display:flex;
+    float:right;
+    justify-content:space-around;
+    align-items:centre;
+    height: 60px;
+    background-color:mistyrose;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+    padding:0px 5%;
+}
+
+
+.logo{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: darkslateblue;
+    text-align: center;
+}
+.active{
+    font-weight: bold;
+    color: khaki;
+}
+.text-container p:nth-child(1){
+    font-family: sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color:khaki;
+    font-size:60px;
+}
+.text-container p:nth-child(2){
+    font-family: sans-serif;
+    font-weight: bold;
+    letter-spacing: normal;
+    color: khaki;
+    font-size: 60px;
+}
+.text-container p:nth-child(3){
+    font-family: sans-serif;
+    color: khaki;
+    font: 30px;
+}
+.model{
+    height: 560px;
+    position: absolute;
+    bottom: 0px;
+    left: 70%; 
+    transform: translate(-70);
+}
+.about-container{
+    width: 80%;
+    height:330px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 2px 2px 12px rgba(0,0,0,0.2);
+    margin: 7% auto 20px auto;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+.contact-me{
+    width: 100px;
+    height: 280px;
+    background-color: lightblue;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact-me p{
+    color: white;
+    font-size: 30px;
+    font-family: sans-serif;
+    font-weight: bold;
+    border-bottom: 2px solid white;
+}
+.contact-me button{
+    width: 200px;
+    height: 40px;
+    background-color:white;
+    outline: none;
+    border: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
