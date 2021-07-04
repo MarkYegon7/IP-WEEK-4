@@ -1,8 +1,8 @@
-$(function () {
+$(function() {
     $('.summary').hide();
     $('.cdata-overlay').hide();
-//Get inputs
-    $("#checkout").click(function () {
+    //Get inputs
+    $("#checkout").click(function() {
         let flavour = $(".flavour option:selected").val();
         let size = $("#size option:selected").val();
         let crust = $("#crust option:selected").val();
@@ -12,7 +12,7 @@ $(function () {
 
         //Function order
         let order = (f, s, c, t, n, total) => {
-            return {f, s, c, t, n, total};
+            return { f, s, c, t, n, total };
         };
 
         //check price
@@ -384,47 +384,37 @@ $(function () {
         // let myOrder = JSON.stringify(JSON.parse(newOrder));
 
         //Write to the order
-        $('.summary').slideDown(2000);
-        $('.cdata-overlay').slideUp();
-        $('#list').slideDown();
-        $('.deliver').show(1000);
-        $('.delivernot').show(1000);
+        $(".deliver").click(function() {
+            $(".sun").show(1000);
+            $('.summary').slideDown(2000);
+            $('.cdata-overlay').slideUp();
+            $('#list').slideDown();
+            $('.deliver').show(1000);
+            $('.delivernot').show(1000);
+        });
 
         $('#list').text(" ");
-        $("#list").append("<br>" + "Flavour :   " + newOrder.f + "<br>" + "Size :   "
-            + newOrder.s + "<br>" + "Crust :     "
-            + newOrder.c + "<br>" + "Toppings :     "
-            + newOrder.t + "<br>" + " Number of pizzas :    "
-            + newOrder.n + "<br>" + "Total Price :  "
-            + newOrder.total + "<br><br>").css('font-family', 'system-ui').css('font-size', '24px');
+        $("#list").append("<br>" + "Flavour :   " + newOrder.f + "<br>" + "Size :   " +
+            newOrder.s + "<br>" + "Crust :     " +
+            newOrder.c + "<br>" + "Toppings :     " +
+            newOrder.t + "<br>" + " Number of pizzas :    " +
+            newOrder.n + "<br>" + "Total Price :  " +
+            newOrder.total + "<br><br>").css('font-family', 'system-ui').css('font-size', '24px');
     });
 
     //Deliver
-    $(".deliver").click(function () {
-        $('.summary').slideUp();
-        $('#list').slideUp();
-        $('.summary').text("Provide location details").slideDown();
-        $('.deliver').hide(1000);
-        $('.delivernot').hide(1000);
-        $('.cdata-overlay').slideDown();
+    $(".deliver").click(function() {
+        $("#sun").show(1000);
     });
 
 
     //Pick Up
-    $(".delivernot").click(function () {
+    $(".delivernot").click(function() {
 
     });
 
     //Scrollify
-    $(function () {
+    $(function() {
         $.scrollify.move('#sum-order');
     });
 });
-
-
-
-
-
-
-
-
