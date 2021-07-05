@@ -3,7 +3,7 @@
 }
 
 #welcome {
-    background-image: url("/images44/pizza1.jpg");
+    background-image: url("../images44/pizza1.jpg");
     background-size: cover;
     width: 1850px;
     height: 927px;
